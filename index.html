@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Registro Servicio Social</title>
+    </head>
+    <body>
+        <main>
+            <!--Header section-->
+            <div class="survey-header">
+                <h1 id="title">Servicio Social CODE 2024</h1>
+                <p id="description">Llena el siguiente formulario para completar tu registro para el servicio social 2024.</p>
+            </div>
+            
+            <!--Form section-->
+            <form id="survey-form">
+                <fieldset id="personal-info">
+                    <legend>Informacion Personal</legend>
+                    <label class="field" id="name-label" for="name">Nombre(s) <input  id="name" required type="text" name="name" placeholder="Nombre(s)" maxlength="20"></label>
+                    <label class="field" id="last-name-one-label" for="last-name-one">Apellido Paterno <input id="last-name-one" required type="text" name="last-name-one" placeholder="Apellido Paterno" maxlength="20"></label>
+                    <label class="field" id="last-name-two-label" for="last-name-two">Apellido Materno <input id="last-name-two" type="text" name="last-name-two"  value="" placeholder="Apellido Materno" maxlength="20"></label>
+                    <label class="field" id="number-label" for="number">Edad <input id="number" required type="number" name="number" min="18" max="80" placeholder="Edad"></label>
+                    <label class="field" id="phone-label" for="phone">Telefono <input id="phone" required type="tel" name="phone" placeholder="7-10 Digitos" pattern="[0-9]{10}" minlength="7" maxlength="10"></label>
+                    <label class="field" id="email-label" for="email">Correo Electronico <input id="email" required type="email" name="email" placeholder="Correo electronico"></label>
+                </fieldset>
+                <fieldset id="admin-info">
+                    <legend>Centro Deportivo</legend>
+                    <p>Elige el centro deportivo de tu interes</p>
+                    <label id="code-alcalde-label" for="code-alcalde"> <input id="code-alcalde" type="radio" name="sport-center" value="alcalde" checked> CODE Alcalde</label>
+                    <label id="code-lopez-label" for="code-lopez"><input id="code-lopez" type="radio" name="sport-center" value="lopez"> CODE Lopez Mateos</label>
+                    <label id="code-metro-label" for="code-metro"><input id="code-metro" type="radio" name="sport-center" value="metropolitano"> CODE Metropolitano</label>
+                    <label id="code-avila-label" for="code-avila"><input id="code-avila" type="radio" name="sport-center" value="avila"> CODE Avila Camacho</label>
+                    <label id="code-revolucion-label" for="code-revolucion"><input id="code-revolucion" type="radio" name="sport-center" value="revolucion"> CODE Revolucion</label>
+                </fieldset>
+                <fieldset id="school-info">
+                    <legend>Escuela de procedencia</legend>
+                    <select required name="school" id="dropdown">
+                        <option value="">Selecciona</option>
+                        <option value="ceti">Centro de Ensenanza Tecnica Industrial</option>
+                        <option value="une">Universidad UNE </option>
+                        <option value="uteg">Centro Universitario UTEG</option>
+                        <option value="udg">Universidad de Guadalajara</option>
+                        <option value="uned">UNED</option>
+                        <option value="lamar">Universidad Lamar</option>
+                        <option value="tec">Tecnologico de Monterrey</option>
+                        <option value="univer">Universidad UNIVER</option>
+                        <option value="uad">Universidad de Artes Digitales UAD</option>
+                    </select>
+                </fieldset>
+                <fieldset id="class-info">
+                    <legend>Grupos</legend>
+                    <p>Selecciona el(los) grupos de los que te gustaria encargarte</p>
+                    <label for="4-7" id="4-7-label"><input type="checkbox" name="group-prefer" id="4-7" value="4-7"> 4-7 años</label>
+                    <label for="8-10" id="8-10-label"><input type="checkbox" name="group-prefer" id="8-10" value="8-10"> 8-10 años</label>
+                    <label for="11-13" id="11-13-label"><input type="checkbox" name="group-prefer" id="11-13" value="11-13"> 11-13 años</label>
+                    <label for="14-17" id="14-17-label"><input type="checkbox" name="group-prefer" id="14-17" value="14-17"> 14-17 años</label>
+                </fieldset>
+                <fieldset id="bio-info">
+                    <legend>Acerca de ti</legend>
+                    <textarea name="bio" id="bio" placeholder="Escribe una breve descripcion de ti para conocerte mejor" rows="7" minlength="3" maxlength="100"></textarea>
+                </fieldset>
+                <input type="submit" id="submit" value="Enviar">
+            </form>
+        </main>
+    </body>
+</html>
